@@ -7,7 +7,11 @@ import Credentials from './components/sections/Credentials'
 import Roles from './components/sections/Roles'
 import Compensation from './components/sections/Compensation'
 import EarningPotential from './components/sections/EarningPotential'
+import Testimonials from './components/sections/Testimonials'
+import HiringProcess from './components/sections/HiringProcess'
+import FAQ from './components/sections/FAQ'
 import Apply from './components/Apply'
+import LiveChat from './components/LiveChat'
 import { Button } from '@/components/ui/button'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
@@ -219,8 +223,12 @@ export default function Home() {
       <Credentials />
       <Roles />
       <Compensation />
+      <Testimonials />
       <EarningPotential />
+      <HiringProcess />
+      <FAQ />
       {showApply && <Apply onClose={() => setShowApply(false)} />}
+      <LiveChat />
     </main>
   )
 }
